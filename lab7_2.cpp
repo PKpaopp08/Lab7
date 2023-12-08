@@ -1,4 +1,30 @@
 //Dialog of the first example is given below.
+#include <iostream>
+using namespace std;
+
+int main(){
+    string F="Fahsai", usn ,day,txt;
+    string movie;
+    int student_id;
+
+    cout << F << ": Sawadee ka...Can you tell me your name?"<<endl;
+    cout<< "?????: " ; getline(cin,usn) ;
+    cout << F << ": Wow!!! "<< usn <<" is a really cool name."<<endl;
+    cout << F << ": I think you are an Engineering student. What is your student ID?"<<endl;
+    cout<< usn <<": " ;cin >> student_id ; cin.ignore();
+    cout << F << ": I think you may be GEAR "<< (student_id/10000000)-12 <<". I have a free movie ticket for you."<<endl;
+    cout << F << ": Let's go to the cinema together!!!"<<endl;
+    cout << F << ": What movie do you want to watch?"<<endl;
+    cout<< usn <<": " ; getline(cin,movie) ;
+    cout << F << ": So....which day are you free to go with me?"<<endl;
+    cout<< usn <<": " ; getline(cin,day) ;
+    cout << F << ": "<<day<<"....that is OK!!! I'm looking forward to watching " <<   
+    movie <<" with you."<<endl;
+    cout<< usn <<": " ; getline(cin,txt) ;
+    cout << F << ": 555+ see you "<<day<<". Bye Bye \\(^ ^)/";
+
+}
+
 
 /*
 Fahsai: Sawadee ka...Can you tell me your name?
